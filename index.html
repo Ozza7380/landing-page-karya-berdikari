@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <meta charset="utf-8">
+    <title> landing page Toko besi </title>
+    <meta name="description" content="Toko Karya Berdikari Sragen: wiremesh, pipa, plat, holo, bajaringan, dll. Harga bersahabat, stok lengkap, bisa antar, hubungi via Whatsapp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="banner">
+        <img class="banner-bg" src="assets/depan.png" alt="Toko Karya Berdikari">
+        <div class="banner-layer">
+        <div class="container">
+            <h1 class="banner-title">TOKO KARYA BERDIKARI</h1>
+            <P class="banner-subtitle">Kuat * Kokoh * Terpercaya</P>
+        </div>
+    </div>
+    </div>
+    
+    <div class="section about">
+        <div class="container">
+            <h2 class="about-title">Tentang Kami</h2>
+            <p class="about-text">Kami menyediakan besi beton, holo plat, semen dan bahan bangunan lain dengan harga yang bersahabat serta pengiriman cepat. cocok untuk proyek rumah, ruko, hingga konstruksi skala besar di Sragen dan sekitarnya</p>
+        </div>
+    </div>
+<div class="section products">
+    <div class="container">
+        <h2 class="products-title">Produk Unggulan Kami</h2>
+
+        <div class="products-grid">
+            <div class="card">
+                <img class="card-thumb" src="assets/besi.png" alt="Gambar besi">
+                <span class="card-name">Besi Beton</span>
+                <span class="card-note">Diameter 8-16mm * SNI</span>
+            </div>
+            <div class="card">
+                <img class="card-thumb" src="assets/besii.png" alt="Gambar besi">
+                <span class="card-name">Wiremesh</span>
+                <span class="card-note"> * M6 * M8 * M10</span>
+            </div>
+            <div class="card">
+                <img class="card-thumb" src="assets/aa.png" alt="Gambar besi">
+                <span class="card-name">Besi Holo</span>
+                <span class="card-note">20x20 * 40x40 * 40x60</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service -->
+<div class="section services">
+    <div class="container">
+    <div class="service-title">
+     <h2 class="service-title">Kenapa Pilih Kami?</h2>
+
+     <div class="services-grid">
+        <div class="svc">
+            <img class="svc-icon" src="assets/ready-stock.png" alt="Stok lengkap">
+            <span class="svc-name"> Stok lengkap</span>
+            <p class="svc-desc"> Material populer selalu tersedia.</p>
+
+        </div>
+         <div class="svc">
+            <img class="svc-icon" src="assets/delivery-truck.png" alt="Antar Cepat">
+            <span class="svc-name"> Antar Cepat</span>
+            <p class="svc-desc">Pengiriman dalam kota (same day).</p>
+            
+        </div>
+         <div class="svc">
+            <img class="svc-icon" src="assets/best-price.png" alt="Harga bersahabat">
+            <span class="svc-name">Harga bersahabat</span>
+            <p class="svc-desc"> Diskon untuk pembelian proyek/grosir.</p>
+            
+        </div>
+     </div>
+     </div>
+    </div>
+</div>
+
+<div class="section location " id="lokasi">
+    <div class="container">
+        <h2 class="location-title">Lokasi toko</h2>
+        <p class="location-text">
+            Klik tombol di bawah untuk membuka Google Maps. 
+        </p>
+
+        <div class="location-actions">
+            <a class="btn btn-primary" href="https://maps.app.goo.gl/d8nzz42MW4BFX4w56" target="_blank" rel="noopener">
+                Buka di Google Maps 
+            </a>
+            <p class="location-address"><em> Alamat singkat: RT 1 RW 1 Gebang Masaran</em></p>
+        </div>
+    </div>
+</div>
+ <!-- form -->
+<div class="section">
+    <div class="container">
+        <h2>Form Pesanan</h2>
+
+    <form id="registration">
+        <div class="format-input">
+            <label>Nama:</label>
+            <input type="text" id="name" placeholder="Tulis nama Anda disini" required class="input">
+        </div>
+        <div class="format-input">
+            <label>Nomor WhatsApp:</label>
+            <input type="text" id="WhatsApp" placeholder="+628xxxxxxxxx" required class="input">
+        </div>
+        <div class="format-input">
+            <label>Alamat:</label>
+            <textarea id="Alamat" rows="2" cols="50" placeholder="Jl XXXX, Desa XXXXX. RT XX, RW XX, Kelurahan XXXXX, Kecamatan XXXXX, Kabupaten XXXXXX." required class="input"></textarea>
+        </div>
+        <div class="format-input">
+            <label>Pesanan:</label>
+            <textarea id="barang" rows="6" cols="50" placeholder="Tulis pesanan Anda disini" required class="input"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Pesan</button>
+    </form>
+    </div>
+</div>
+<!-- footer -->
+ <footer class="footer">
+    <div class="container">
+        <small>copywrite <span id="year"></span> Toko Karya Berdikari-Sragen</small>
+        <small><a href="tel:+6285642949420">telepone</a> * <a href="https://wa.me/6285642949420" target="_blank" rel="noopener">Whatsapp</small>
+    </div>
+ </footer>
+ <script>
+ document.getElementById('year').textContent = new Date().getFullYear();
+ </script>
+<a class="wa-float" href="https://wa.me/6285642949420?text=Halo%20toko%20karya%20berdikari,%20saya%20ingin%20tanya%20barang" aria-label="Chat Whatsapp" target="_blank" rel="noopener">WA</a>
+<script src="wa.js"></script>
+</body>
+
+</html>
