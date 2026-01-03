@@ -16,17 +16,17 @@ form.addEventListener('submit', function (event) { // form di cek ketika mengcli
    //     return;
    // }
     console.log("wa sesuai")
-    const massage = ` assalamualaikum Admin, 
-saya ingin melakukan pesanan atas nama *${name.trim()}*
-dengan alamat *${alamat.trim()}*
-dan pesanan sebagai berikut:
+    const massage = ` Assalamualaikum Admin, 
+Saya ingin melakukan pesanan atas nama *${name.trim()}*
+Dengan alamat *${alamat.trim()}*
+Dan pesanan sebagai berikut:
 *${barang.trim()}*
 
 terimakasih.`;
     console.log("peasan:", massage)
     const endcodeMassage = encodeURIComponent(massage);
     console.log("encoded:", endcodeMassage)
-    const waUrl = `https://wa.me/6285747798750?text=${endcodeMassage}`;
+    const waUrl = `https://wa.me/6285642949420?text=${endcodeMassage}`;
     console.log('whatsapp url:', waUrl)
     window.open(waUrl, "_blank");
 }) 
