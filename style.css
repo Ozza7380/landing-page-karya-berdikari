@@ -57,6 +57,11 @@ img {
     margin-bottom: 8px; letter-spacing: 1px;
     margin-top: 20px;
     font-weight: 700;
+    animation: karya 2.5s infinite alternate;
+}
+@keyframes karya {
+    from {scale: 1;}
+    to {scale: 1.1;}
 }
  .banner-subtitle {
     font-size: clamp(14px, 3.2vw, 20px); 
@@ -92,6 +97,7 @@ img {
     width: 100%;
 }
 .card {
+    transition: 1s;
     max-width: 300px;
     border: 1px solid #e7e7e7; 
     border-radius: 8px; 
@@ -119,8 +125,9 @@ img {
     font-size: 18px;
 }
 .card:hover {
-    border-color: #1a5632; 
-    transition: .2s;
+    border-color: #1a5632;
+    transform: scale(1.1);
+    
 }
 /*keunggulan*/
 .services {
@@ -135,6 +142,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 .svc {
+    transition: 1s;
     background: #ffffff;
     border: 1px solid #e7e7e7; 
     border-radius: 8px; 
@@ -153,6 +161,9 @@ img {
 .svc-desc {color: #5a5a5a; 
     font-size: 14px;
 }
+.svc:hover {
+    transform: scale(1.2);
+}
 /* wa */
 .wa-float{position: fixed; 
     right: 16px; 
@@ -167,6 +178,11 @@ img {
     font-weight: 700; 
     text-decoration: none; 
     box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    animation: wa 2.5s infinite alternate;
+}
+@keyframes wa {
+    from {scale: 1;}
+    to {scale: 1.2;}
 }
 .wa-float:hover{
     filter: brightness(.95);
@@ -220,15 +236,17 @@ img {
     background: #ffffff;
 }
 .btn:hover {
-    background: #f6f8f7; 
+    background: #77ebb1; 
     color: #212121;
 }
 .btn-primary {
     background: #1a5632; 
     color: #ffffff; 
     border-color: #1a5632;
+    transition: 2s;
 }
 .btn-primary:hover {
+    transform: scale(1.05);
     filter: brightness(.95);
 }
 /*order*/
